@@ -7,7 +7,8 @@
     <title>Dachborad | Mohamad Qanass</title>
 </head>
 <body>
- <div class="menu">
+ <!-- changed: make sidebar semantic and accessible -->
+<nav class="menu" aria-label="Main sidebar">
   <ul>
     <li class="profile">
       <div class="img-box"> 
@@ -62,7 +63,7 @@
       </a>
     </li>
   </ul>
- </div>
+ </nav>
  
 <div class="content">
   <div class="title-info">
@@ -104,6 +105,9 @@
   <p>Products</p>
   <i class="fas fa-table"></i>
 </div>
+
+<!-- changed: wrap table so it becomes horizontally scrollable on small screens -->
+<div class="table-wrap">
 <table>
   <thead>
     <tr>
@@ -140,6 +144,7 @@
     </tr>
   </tbody>
 </table>
+</div>
 </div>
 
 </body>
