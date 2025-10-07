@@ -1,0 +1,49 @@
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* stack sidebar on top */
+  }
+
+  .menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu:hover {
+    width: 100%; /* disable hover expand on mobile */
+  }
+
+  .content {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .data-info {
+    flex-direction: column; /* stack boxes */
+  }
+
+  .data-info .box {
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .menu {
+    width: 80px;
+  }
+
+  .menu:hover {
+    width: 200px;
+  }
+
+  .profile h2 {
+    font-size: 16px;
+  }
+}
